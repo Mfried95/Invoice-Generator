@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eee053b3e0.js" crossorigin="anonymous"></script>
+    <title>Invoice Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            <h1>Invoice creator</h1>
+            <p>Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+
+
+        <section class="services">
+            <button id="car-wash">Wash Car $10</button>
+            <button id="mow-lawn"> Mow Lawn $20</button>
+            <button id="pull-weeds">Pull Weeds $30</button>
+        </section>
+
+
+        <section class="pricing">
+
+            <div class="task">
+                <h1>TASKS</h1>
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+
+            <div class="total">
+                <h1>TOTAL</h1>
+                <div class="price1"></div>
+                <div class="price2"></div>
+                <div class="price3"></div>
+            </div>
+        </section>
+    
+        <div class="line"></div>
+       
+        <footer>
+            <div class="footer-head">
+                <h2>Notes</h2>
+                <h2>Total Amount</h2>
+            </div>
+            <div class="note-header">
+                <p>We accept cash, credit card or cryptocurrency </p>
+                <h2 id="total-amount">$00</h2>
+            </div>
+        </footer>
+
+        <button class="invoice-btn"><i class="fa-solid fa-envelope"></i>Send Invoice</button>
+
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
