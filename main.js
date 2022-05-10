@@ -1,4 +1,3 @@
-
 // ARRAY FOR SERVICES AND PRICES
 const serviceItems = ["Car Wash", "Mow Lawn", "Pull Weeds"]
 const Item1 = "10"
@@ -49,15 +48,30 @@ pullWeeds.addEventListener("click", function(){
 
 // RENDER TOTAL PRICE
 function priceTotal(){
-    const totalPrice = document.querySelector("#total-amount")
     const allCharges = parseInt(Item1) + parseInt(Item2)  + parseInt(Item3) 
     totalPrice.textContent =  "$" + allCharges
 }
 
+const totalPrice = document.querySelector("#total-amount")
 
 
 
 //INVOICE BUTTON
+const invoiceBtn = document.querySelector(".invoice-btn")
+invoiceBtn.addEventListener("click", function(){
+    resetbtn()
+})
 
+
+//RESET BUTTON
+function resetbtn(){
+    carPrice.textContent = ""
+    itemCar.textContent = ""
+    itemLawn.textContent = ""
+    lawnPrice.textContent = ""
+    itemWeeds.textContent = ""
+    weedPrice.textContent = ""
+    totalPrice.textContent =  "$0"
+}
 
 
